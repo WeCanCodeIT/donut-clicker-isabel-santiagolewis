@@ -5,19 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
     <title>Donut Clicker</title>
 </head>
 <body>
     <header>
-        <h1><a href="">Fred the Baker Baking Company</a></h1>
-        <li>A tribute to <a href="">Cookie Clicker</a></li>
-        <button onclick="document.getElementById('IsabelModal').style.display='block'" class="Isabel-button">Isabel Modal</button>
+        <button id="FredBtn">About Fred the Baker Baking Company</button>
+        <ln>A tribute to <a href="https://orteil.dashnet.org/cookieclicker/" target="_blank">Cookie Clicker</a></ln>
+        <button id="isabelBtn">About the Developer: Isabel Santiago Lewis</button>
     </header>
-    <h1 id="playerDonutCount"></h1>
-    <h1 id="playerAutoClickerCount"></h1>
-    <h1 id="nextAutoClickerCost"></h1>
-    <button id="donutButton">Click Here to Add Donut</button>
-    <button id="autoClickerButton">Purchase Auto Clicker</button>
-    <script src="app.js"></script>
+    <div class="content">
+        <h1 id="welcome">Welcome to Donut Clicker!</h1>
+        <img src="donut-gif.gif">
+        <h1 id="playerDonutCount"></h1>
+        <h1 id="playerAutoClickerCount"></h1>
+        <h1 id="nextAutoClickerCost"></h1>
+        <button id="donutButton">Click Here to Add Donut</button>
+        <button id="autoClickerButton">Purchase Auto Clicker</button>
+        <button id="autoClickersActivationButton">Activate Auto Clickers</button>
+        <button id="reset">Reset Game Button</button>
+        <script src="app.js"></script>
+    </div>
+    <div id="isabelModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="AboutMe">About Me</h2>
+            <h3>Biography</h3>
+            <p>I am a results-driven Cybersecurity professional with a proven track record in vulnerability and patch management, systems administration, and scripting. With a Bachelor of Science Degree in Cyber Security and extensive experience in Linux fundamentals, Red Hat Ansible Automation, Python and PowerShell scripting, and Microsoft System Center Configuration Manager (SCCM), I bring a comprehensive skill set to any organization. My ability to automate troubleshooting techniques, implement effective patching strategies, and manage complex infrastructure environments has consistently delivered successful outcomes. I excel in collaborating with cross-functional teams and providing mentorship to junior professionals, demonstrating strong leadership qualities. With a dedication to continuous learning and a passion for problem-solving, I am poised to make significant contributions to the cybersecurity landscape.</p>
+            <h3>Contact Information</h3>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/isabel-santiago-lewis-00b76b1b8">LinkedIn: Isabel Santiago Lewis</a></li>
+                <li><a href="https://github.com/isabel-santiagolewis/isabel-santiagolewis.github.io">GitHub: Isabel Santiago Lewis</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="FredModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="AboutMe">About Fred the Baker Baking Company</h2>
+            <p>"Fred the Baker Baking Company" is a quaint, family-owned bakery located in a charming town. Known for its delightful pastries, artisanal bread, and premium coffee, this beloved establishment has been a cherished local gem for generations. The bakery's heartwarming atmosphere and dedication to the art of baking create a welcoming space where customers can relish the joys of freshly baked treats and engaging conversations. This bakery is not just a place to satisfy your taste buds; it's a hub for building friendships, sharing stories, and fostering a sense of community.</p>
+
+        </div>
+    </div>
 </body>
 </html>
