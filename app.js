@@ -100,6 +100,9 @@ window.onclick = function(event){
     if(event.target == isabelModalBlock){
         isabelModalBlock.style.display = "none";
     }
+    if(event.target == FredModalBlock){
+        FredModalBlock.style.display = "none";
+    }
 }
 
 FredModalBtn.addEventListener("click", function (event) {
@@ -108,12 +111,6 @@ FredModalBtn.addEventListener("click", function (event) {
 
 closeFredModal.onclick=function(){
     FredModalBlock.style.display = "none";
-}
-
-window.onclick = function(event){
-    if(event.target == FredModalBlock){
-        FredModalBlock.style.display = "none";
-    }
 }
 
 })
